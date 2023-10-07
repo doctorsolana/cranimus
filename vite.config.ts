@@ -7,7 +7,7 @@ const ENV_PREFIX = ['GAMBA_', 'VITE_']
 
 export default defineConfig(() => ({
   envPrefix: ENV_PREFIX,
-  assetsInclude: ['**/*.glb'],
+  assetsInclude: ['**/*.glb', '**/*.ttf'],
   server: {
     port: 3000,
     host: true,
