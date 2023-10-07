@@ -16,13 +16,21 @@ export default defineConfig(() => ({
   plugins: [
     react(),
     Unfonts({
-      google: {
-        families: [
-          {
-            name: 'Roboto Mono',
-            styles: 'wght@400;700',
+      custom: {
+        families: [{
+          name: 'Pixelated',
+          local: 'Pixelated',
+          src: './src/assets/fonts/*.ttf',
+          transform(font) {
+            if (font.basename === 'pixelated') {
+              font.weight = 400;
+            }
+            return font;
           },
-        ],
+        }],
+        display: 'auto',
+        preload: true,
+        injectTo: 'head-prepend',
       },
     }),
     VitePWA({
