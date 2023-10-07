@@ -9,11 +9,9 @@ export function Home() {
     <div className={styles.banner}>
       <Section>
         <h2>
-          What is this?
+          
         </h2>
-        <p style={{ wordWrap: 'break-word' }}>
-          An open source, decentralized casino built on Gamba. Copy this platform with your own branding and start earning fees on every bet.
-        </p>
+  
         <div style={{ display: 'flex', gap: '10px' }}>
           <Button
             as="a"
@@ -22,7 +20,7 @@ export function Home() {
             target="_blank"
             icon={<Icon.ExternalLink />}
           >
-            Learn more
+            BUY $GRAVE
           </Button>
         </div>
       </Section>

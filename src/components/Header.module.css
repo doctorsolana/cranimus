@@ -9,7 +9,7 @@
 
 @media (min-height: 800px) {
   .wrapper {
-    background: #000000CC;
+    background: #0000000f;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 10px 20px;
